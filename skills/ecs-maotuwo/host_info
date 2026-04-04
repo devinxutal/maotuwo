@@ -1,0 +1,4 @@
+ECS_HOST=8.130.44.101
+ECS_USER=maotuwo
+SSH_KEY=ssh-keys/id_rsa
+DEPLOYMENT_DIR=/home/maotuwo/deployment
