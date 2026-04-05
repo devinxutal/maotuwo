@@ -10,6 +10,9 @@ build/
 .env.local
 .env.*.local
 
+# Security: deployment keys
+skills/ecs-maotuwo/ssh-keys/
+
 # macOS
 .DS_Store
 **/.DS_Store

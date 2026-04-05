@@ -1,0 +1,1204 @@
+{
+  "version": 1,
+  "timestamp": "2026-04-05T05:29:36.349Z",
+  "data": {
+    "f2l-1": {
+      "mainFormulaId": "f1-1",
+      "formulas": [
+        {
+          "id": "f1-1",
+          "expression": "U R U' R'",
+          "tag": "系统",
+          "spin": 0
+        }
+      ]
+    },
+    "f2l-2": {
+      "mainFormulaId": "f1-2",
+      "formulas": [
+        {
+          "id": "f1-2",
+          "expression": "U' L' U L",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-3": {
+      "mainFormulaId": "f1-3",
+      "formulas": [
+        {
+          "id": "f1-3",
+          "expression": "U' R U R' U R U' R'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-4": {
+      "mainFormulaId": "f1-4",
+      "formulas": [
+        {
+          "id": "f1-4",
+          "expression": "U L' U' L U' L' U L",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-5": {
+      "mainFormulaId": "f1-5",
+      "formulas": [
+        {
+          "id": "f1-5",
+          "expression": "(R U R') U2 (R U' R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-6": {
+      "mainFormulaId": "f1-6",
+      "formulas": [
+        {
+          "id": "f1-6",
+          "expression": "(L' U' L) U2 (L' U L)",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-7": {
+      "mainFormulaId": "f1-7",
+      "formulas": [
+        {
+          "id": "f1-7",
+          "expression": "U' (R U R') U (R U R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-8": {
+      "mainFormulaId": "f1-8",
+      "formulas": [
+        {
+          "id": "f1-8",
+          "expression": "U (L' U' L) U' (L' U' L)",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-9": {
+      "mainFormulaId": "f1-9",
+      "formulas": [
+        {
+          "id": "f1-9",
+          "expression": "U' (R U' R') U (R U R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-10": {
+      "mainFormulaId": "f1-10",
+      "formulas": [
+        {
+          "id": "f1-10",
+          "expression": "U (L' U L) U' (L' U' L)",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-11": {
+      "mainFormulaId": "f1-11",
+      "formulas": [
+        {
+          "id": "f1-11",
+          "expression": "U' (R U2 R') U (R U R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-12": {
+      "mainFormulaId": "f1-12",
+      "formulas": [
+        {
+          "id": "f1-12",
+          "expression": "U (L' U2 L) U' (L' U' L)",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-13": {
+      "mainFormulaId": "f1-13",
+      "formulas": [
+        {
+          "id": "f1-13",
+          "expression": "y' (R' U R) U' (R' U R)",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-14": {
+      "mainFormulaId": "f1-14",
+      "formulas": [
+        {
+          "id": "f1-14",
+          "expression": "(R U' R') U (R U' R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-15": {
+      "mainFormulaId": "f1-15",
+      "formulas": [
+        {
+          "id": "f1-15",
+          "expression": "y' (R' U R) U2 y (R U R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-16": {
+      "mainFormulaId": "f1-16",
+      "formulas": [
+        {
+          "id": "f1-16",
+          "expression": "(R U' R') U2 (F' U' F)",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-17": {
+      "mainFormulaId": "f1-17",
+      "formulas": [
+        {
+          "id": "f1-17",
+          "expression": "(R U2 R') U' (R U R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-18": {
+      "mainFormulaId": "f1-18",
+      "formulas": [
+        {
+          "id": "f1-18",
+          "expression": "y' (R' U2 R) U (R' U' R)",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-19": {
+      "mainFormulaId": "f1-19",
+      "formulas": [
+        {
+          "id": "f1-19",
+          "expression": "U (R U2 R') U (R U' R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-20": {
+      "mainFormulaId": "f1-20",
+      "formulas": [
+        {
+          "id": "f1-20",
+          "expression": "y' U' (R' U2 R) U' (R' U R)",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-21": {
+      "mainFormulaId": "f1-21",
+      "formulas": [
+        {
+          "id": "f1-21",
+          "expression": "U2 (R U R') U (R U' R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-22": {
+      "mainFormulaId": "f1-22",
+      "formulas": [
+        {
+          "id": "f1-22",
+          "expression": "y' U2 (R' U' R) U' (R' U R)",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-23": {
+      "mainFormulaId": "f1-23",
+      "formulas": [
+        {
+          "id": "f1-23",
+          "expression": "(R U R' U') (R U R' U') (R U R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-24": {
+      "mainFormulaId": "f1-24",
+      "formulas": [
+        {
+          "id": "f1-24",
+          "expression": "y' (R' U' R U) (R' U' R U) (R' U' R)",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-25": {
+      "mainFormulaId": "f1-25",
+      "formulas": [
+        {
+          "id": "f1-25",
+          "expression": "U' (R' F R F') (R U R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-26": {
+      "mainFormulaId": "f1-26",
+      "formulas": [
+        {
+          "id": "f1-26",
+          "expression": "U (F R' F' R) (L' U' L)",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-27": {
+      "mainFormulaId": "f1-27",
+      "formulas": [
+        {
+          "id": "f1-27",
+          "expression": "(R U' R') U (R U R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-28": {
+      "mainFormulaId": "f1-28",
+      "formulas": [
+        {
+          "id": "f1-28",
+          "expression": "y' (R' U R) U' (R' U' R)",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-29": {
+      "mainFormulaId": "f1-29",
+      "formulas": [
+        {
+          "id": "f1-29",
+          "expression": "y' (R' U' R) U (R' U' R)",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-30": {
+      "mainFormulaId": "f1-30",
+      "formulas": [
+        {
+          "id": "f1-30",
+          "expression": "(R U R') U' (R U R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-31": {
+      "mainFormulaId": "f1-31",
+      "formulas": [
+        {
+          "id": "f1-31",
+          "expression": "(R U' R') U (R U' R') U (R U' R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-32": {
+      "mainFormulaId": "f1-32",
+      "formulas": [
+        {
+          "id": "f1-32",
+          "expression": "y' (R' U R) U' (R' U R) U' (R' U R)",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-33": {
+      "mainFormulaId": "f1-33",
+      "formulas": [
+        {
+          "id": "f1-33",
+          "expression": "U (R U' R') U' (R U R' U') (R U R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-34": {
+      "mainFormulaId": "f1-34",
+      "formulas": [
+        {
+          "id": "f1-34",
+          "expression": "U' (R U R') U (R U' R' U) (R U' R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-35": {
+      "mainFormulaId": "f1-35",
+      "formulas": [
+        {
+          "id": "f1-35",
+          "expression": "U' (R U R') U2 (R U' R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-36": {
+      "mainFormulaId": "f1-36",
+      "formulas": [
+        {
+          "id": "f1-36",
+          "expression": "U (R U' R') U2 (R U R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-37": {
+      "mainFormulaId": "f1-37",
+      "formulas": [
+        {
+          "id": "f1-37",
+          "expression": "(R U R' U') (R U R') U2 (R U' R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-38": {
+      "mainFormulaId": "f1-38",
+      "formulas": [
+        {
+          "id": "f1-38",
+          "expression": "(R U R' U') (R U' R') U2 (R U' R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-39": {
+      "mainFormulaId": "f1-39",
+      "formulas": [
+        {
+          "id": "f1-39",
+          "expression": "(R U R' U') (R U2 R') U' (R U R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-40": {
+      "mainFormulaId": "f1-40",
+      "formulas": [
+        {
+          "id": "f1-40",
+          "expression": "(R U R' U') (R U R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "f2l-41": {
+      "mainFormulaId": "f1-41",
+      "formulas": [
+        {
+          "id": "f1-41",
+          "expression": "(R U R') U' (R U' R') U (R U R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-1": {
+      "mainFormulaId": "o1-1",
+      "formulas": [
+        {
+          "id": "o1-1",
+          "expression": "R U2 R2' F R F' U2 R' F R F'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-2": {
+      "mainFormulaId": "o1-2",
+      "formulas": [
+        {
+          "id": "o1-2",
+          "expression": "r U r' U2 r U2' R' U2 R U' r'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-3": {
+      "mainFormulaId": "o1-3",
+      "formulas": [
+        {
+          "id": "o1-3",
+          "expression": "f R U R' U' f' U' F R U R' U' F'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-4": {
+      "mainFormulaId": "o1-4",
+      "formulas": [
+        {
+          "id": "o1-4",
+          "expression": "f R U R' U' f' U F R U R' U' F'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-5": {
+      "mainFormulaId": "o1-5",
+      "formulas": [
+        {
+          "id": "o1-5",
+          "expression": "l' U2 L U L' U l",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-6": {
+      "mainFormulaId": "o1-6",
+      "formulas": [
+        {
+          "id": "o1-6",
+          "expression": "r U2 R' U' R U' r'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-7": {
+      "mainFormulaId": "o1-7",
+      "formulas": [
+        {
+          "id": "o1-7",
+          "expression": "r U R' U R U2 r'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-8": {
+      "mainFormulaId": "o1-8",
+      "formulas": [
+        {
+          "id": "o1-8",
+          "expression": "l' U' L U' L' U2 l",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-9": {
+      "mainFormulaId": "o1-9",
+      "formulas": [
+        {
+          "id": "o1-9",
+          "expression": "R U R' U' R' F R2 U R' U' F'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-10": {
+      "mainFormulaId": "o1-10",
+      "formulas": [
+        {
+          "id": "o1-10",
+          "expression": "R U R' U R' F R F' R U2 R'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-11": {
+      "mainFormulaId": "o1-11",
+      "formulas": [
+        {
+          "id": "o1-11",
+          "expression": "r U R' U R' F R F' R U2 r'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-12": {
+      "mainFormulaId": "o1-12",
+      "formulas": [
+        {
+          "id": "o1-12",
+          "expression": "M' R' U' R U' R' U2 R U' R r'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-13": {
+      "mainFormulaId": "o1-13",
+      "formulas": [
+        {
+          "id": "o1-13",
+          "expression": "F U R U' R2' F' R U R U' R'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-14": {
+      "mainFormulaId": "o1-14",
+      "formulas": [
+        {
+          "id": "o1-14",
+          "expression": "R' F R U R' F' R F U' F'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-15": {
+      "mainFormulaId": "o1-15",
+      "formulas": [
+        {
+          "id": "o1-15",
+          "expression": "l' U' l L' U' L U l' U l",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-16": {
+      "mainFormulaId": "o1-16",
+      "formulas": [
+        {
+          "id": "o1-16",
+          "expression": "r U r' R U R' U' r U' r'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-17": {
+      "mainFormulaId": "o1-17",
+      "formulas": [
+        {
+          "id": "o1-17",
+          "expression": "F R' F' R2 r' U R U' R' U' M'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-18": {
+      "mainFormulaId": "o1-18",
+      "formulas": [
+        {
+          "id": "o1-18",
+          "expression": "r U R' U R U2 r2' U' R U' R' U2 r",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-19": {
+      "mainFormulaId": "o1-19",
+      "formulas": [
+        {
+          "id": "o1-19",
+          "expression": "M U R U R' U' R' F R F' M'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-20": {
+      "mainFormulaId": "o1-20",
+      "formulas": [
+        {
+          "id": "o1-20",
+          "expression": "r U R' U' M2 U R U' R' U' M'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-21": {
+      "mainFormulaId": "o1-21",
+      "formulas": [
+        {
+          "id": "o1-21",
+          "expression": "R U2 R' U' R U R' U' R U' R'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-22": {
+      "mainFormulaId": "o1-22",
+      "formulas": [
+        {
+          "id": "o1-22",
+          "expression": "R U2 R2' U' R2 U' R2' U2 R",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-23": {
+      "mainFormulaId": "o1-23",
+      "formulas": [
+        {
+          "id": "o1-23",
+          "expression": "R2 D' R U2 R' D R U2 R",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-24": {
+      "mainFormulaId": "o1-24",
+      "formulas": [
+        {
+          "id": "o1-24",
+          "expression": "r U R' U' r' F R F'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-25": {
+      "mainFormulaId": "o1-25",
+      "formulas": [
+        {
+          "id": "o1-25",
+          "expression": "F' r U r' U' r' F r",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-26": {
+      "mainFormulaId": "o1-26",
+      "formulas": [
+        {
+          "id": "o1-26",
+          "expression": "R U2 R' U' R U' R'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-27": {
+      "mainFormulaId": "o1-27",
+      "formulas": [
+        {
+          "id": "o1-27",
+          "expression": "R U R' U R U2 R'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-28": {
+      "mainFormulaId": "o1-28",
+      "formulas": [
+        {
+          "id": "o1-28",
+          "expression": "M U M' U2 M U M'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-29": {
+      "mainFormulaId": "o1-29",
+      "formulas": [
+        {
+          "id": "o1-29",
+          "expression": "R U R' U' R U' R' F' U' F R U R'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-30": {
+      "mainFormulaId": "o1-30",
+      "formulas": [
+        {
+          "id": "o1-30",
+          "expression": "F R' F R2 U' R' U' R U R' F2",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-31": {
+      "mainFormulaId": "o1-31",
+      "formulas": [
+        {
+          "id": "o1-31",
+          "expression": "R' U' F U R U' R' F' R",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-32": {
+      "mainFormulaId": "o1-32",
+      "formulas": [
+        {
+          "id": "o1-32",
+          "expression": "S R U R' U' R' F R f'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-33": {
+      "mainFormulaId": "o1-33",
+      "formulas": [
+        {
+          "id": "o1-33",
+          "expression": "R U R' U' R' F R F'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-34": {
+      "mainFormulaId": "o1-34",
+      "formulas": [
+        {
+          "id": "o1-34",
+          "expression": "R U R2' U' R' F R U R U' F'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-35": {
+      "mainFormulaId": "o1-35",
+      "formulas": [
+        {
+          "id": "o1-35",
+          "expression": "R U2 R2' F R F' R U2 R'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-36": {
+      "mainFormulaId": "o1-36",
+      "formulas": [
+        {
+          "id": "o1-36",
+          "expression": "L' U' L U' L' U L U L F' L' F",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-37": {
+      "mainFormulaId": "o1-37",
+      "formulas": [
+        {
+          "id": "o1-37",
+          "expression": "F R' F' R U R U' R'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-38": {
+      "mainFormulaId": "o1-38",
+      "formulas": [
+        {
+          "id": "o1-38",
+          "expression": "R U R' U R U' R' U' R' F R F'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-39": {
+      "mainFormulaId": "o1-39",
+      "formulas": [
+        {
+          "id": "o1-39",
+          "expression": "L F' L' U' L U F U' L'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-40": {
+      "mainFormulaId": "o1-40",
+      "formulas": [
+        {
+          "id": "o1-40",
+          "expression": "R' F R U R' U' F' U R",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-41": {
+      "mainFormulaId": "o1-41",
+      "formulas": [
+        {
+          "id": "o1-41",
+          "expression": "R U R' U R U2 R' F R U R' U' F'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-42": {
+      "mainFormulaId": "o1-42",
+      "formulas": [
+        {
+          "id": "o1-42",
+          "expression": "R' U' R U' R' U2 R F R U R' U' F'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-43": {
+      "mainFormulaId": "o1-43",
+      "formulas": [
+        {
+          "id": "o1-43",
+          "expression": "F' U' L' U L F",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-44": {
+      "mainFormulaId": "o1-44",
+      "formulas": [
+        {
+          "id": "o1-44",
+          "expression": "F U R U' R' F'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-45": {
+      "mainFormulaId": "o1-45",
+      "formulas": [
+        {
+          "id": "o1-45",
+          "expression": "F R U R' U' F'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-46": {
+      "mainFormulaId": "o1-46",
+      "formulas": [
+        {
+          "id": "o1-46",
+          "expression": "R' U' R' F R F' U R",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-47": {
+      "mainFormulaId": "o1-47",
+      "formulas": [
+        {
+          "id": "o1-47",
+          "expression": "R' U' R' F R F' R' F R F' U R",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-48": {
+      "mainFormulaId": "o1-48",
+      "formulas": [
+        {
+          "id": "o1-48",
+          "expression": "F R U R' U' R U R' U' F'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-49": {
+      "mainFormulaId": "o1-49",
+      "formulas": [
+        {
+          "id": "o1-49",
+          "expression": "r U' r2' U r2 U r2' U' r",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-50": {
+      "mainFormulaId": "o1-50",
+      "formulas": [
+        {
+          "id": "o1-50",
+          "expression": "r' U r2 U' r2' U' r2 U r'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-51": {
+      "mainFormulaId": "o1-51",
+      "formulas": [
+        {
+          "id": "o1-51",
+          "expression": "f R U R' U' R U R' U' f'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-52": {
+      "mainFormulaId": "o1-52",
+      "formulas": [
+        {
+          "id": "o1-52",
+          "expression": "R U R' U R U' B U' B' R'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-53": {
+      "mainFormulaId": "o1-53",
+      "formulas": [
+        {
+          "id": "o1-53",
+          "expression": "r' U' R U' R' U R U' R' U2 r",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-54": {
+      "mainFormulaId": "o1-54",
+      "formulas": [
+        {
+          "id": "o1-54",
+          "expression": "r U R' U R U' R' U R U2 r'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-55": {
+      "mainFormulaId": "o1-55",
+      "formulas": [
+        {
+          "id": "o1-55",
+          "expression": "R' F R U R U' R2' F' R2 U' R' U R U R'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-56": {
+      "mainFormulaId": "o1-56",
+      "formulas": [
+        {
+          "id": "o1-56",
+          "expression": "r' U' r U' R' U R U' R' U R r' U r",
+          "tag": "系统"
+        }
+      ]
+    },
+    "oll-57": {
+      "mainFormulaId": "o1-57",
+      "formulas": [
+        {
+          "id": "o1-57",
+          "expression": "R U R' U' M' U R U' r'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "pll-aa": {
+      "mainFormulaId": "p1-aa",
+      "formulas": [
+        {
+          "id": "p1-aa",
+          "expression": "x' R2 D2 (R' U' R) D2 (R' U R') x",
+          "tag": "系统",
+          "spin": 180
+        }
+      ]
+    },
+    "pll-ab": {
+      "mainFormulaId": "p1-ab",
+      "formulas": [
+        {
+          "id": "p1-ab",
+          "expression": "x'(R U'R) D2 (R' U R) D2 R2 x",
+          "tag": "系统",
+          "spin": 270
+        }
+      ]
+    },
+    "pll-e": {
+      "mainFormulaId": "p1-e",
+      "formulas": [
+        {
+          "id": "p1-e",
+          "expression": "(R2 U R' U') y (R U R' U')2 (R U R') y' (R U' R2)",
+          "tag": "系统",
+          "spin": 90
+        }
+      ]
+    },
+    "pll-f": {
+      "mainFormulaId": "p1-f",
+      "formulas": [
+        {
+          "id": "p1-f",
+          "expression": "U' (R'U R U') R2' b' x (R' U R) y' (R U R' U' R2)",
+          "tag": "系统"
+        }
+      ]
+    },
+    "pll-ga": {
+      "mainFormulaId": "p1-ga",
+      "formulas": [
+        {
+          "id": "p1-ga",
+          "expression": "(R2' u R') (U R' U') (R u' R2') y' (R' U R)",
+          "tag": "系统"
+        }
+      ]
+    },
+    "pll-gb": {
+      "mainFormulaId": "p1-gb",
+      "formulas": [
+        {
+          "id": "p1-gb",
+          "expression": "(R' d' F)(R2' u R') U (R U' R) u' R2",
+          "tag": "系统"
+        }
+      ]
+    },
+    "pll-gc": {
+      "mainFormulaId": "p1-gc",
+      "formulas": [
+        {
+          "id": "p1-gc",
+          "expression": "(R2' u') (R U' R) U (R' u R2') y (R U'R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "pll-gd": {
+      "mainFormulaId": "p1-gd",
+      "formulas": [
+        {
+          "id": "p1-gd",
+          "expression": "(R U R') y'(R2' u') (R U' R' U) (R' u R2)",
+          "tag": "系统"
+        }
+      ]
+    },
+    "pll-h": {
+      "mainFormulaId": "p1-h",
+      "formulas": [
+        {
+          "id": "p1-h",
+          "expression": "M2 U M2 U2 M2 U M2",
+          "tag": "系统",
+          "spin": 0
+        }
+      ]
+    },
+    "pll-ja": {
+      "mainFormulaId": "p1-ja",
+      "formulas": [
+        {
+          "id": "p1-ja",
+          "expression": "z(U' R D')(R2 U R' U') (R2 U) D R'",
+          "tag": "系统",
+          "spin": 90
+        }
+      ]
+    },
+    "pll-jb": {
+      "mainFormulaId": "p1-jb",
+      "formulas": [
+        {
+          "id": "p1-jb",
+          "expression": "(R U R'F') (R U R'U')(R'F R2 U'R'U')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "pll-na": {
+      "mainFormulaId": "p1-na",
+      "formulas": [
+        {
+          "id": "p1-na",
+          "expression": "z (R' U R') z' (R U2 L' U R') z (U R') z' (R U2 L' U R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "pll-nb": {
+      "mainFormulaId": "p1-nb",
+      "formulas": [
+        {
+          "id": "p1-nb",
+          "expression": "z (U'R D') (R2 U R'U') z' (R U R') z (R2 U R') D R'",
+          "tag": "系统"
+        }
+      ]
+    },
+    "pll-ra": {
+      "mainFormulaId": "p1-ra",
+      "formulas": [
+        {
+          "id": "p1-ra",
+          "expression": "(R U'U')(R' U2) (R B' R' U') (R U R B) R2' U",
+          "tag": "系统",
+          "spin": 90
+        }
+      ]
+    },
+    "pll-rb": {
+      "mainFormulaId": "p1-rb",
+      "formulas": [
+        {
+          "id": "p1-rb",
+          "expression": "(R' U2)(R U'U') (R' F R U R' U') (R' F' R2 U')",
+          "tag": "系统",
+          "spin": 270
+        }
+      ]
+    },
+    "pll-t": {
+      "mainFormulaId": "p1-t",
+      "formulas": [
+        {
+          "id": "p1-t",
+          "expression": "(R U R' U') (R' F R2 U' R' U') (R U R' F')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "pll-ua": {
+      "mainFormulaId": "p1-ua",
+      "formulas": [
+        {
+          "id": "p1-ua",
+          "expression": "(R U' R) U (R U R U') (R' U' R2)",
+          "tag": "系统"
+        }
+      ]
+    },
+    "pll-ub": {
+      "mainFormulaId": "p1-ub",
+      "formulas": [
+        {
+          "id": "p1-ub",
+          "expression": "(R2' U)(R U R' U') (R' U')(R' U R')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "pll-v": {
+      "mainFormulaId": "p1-v",
+      "formulas": [
+        {
+          "id": "p1-v",
+          "expression": "(R' U R' d') (R' F') (R2 U' R' U) (R' F R F)",
+          "tag": "系统"
+        }
+      ]
+    },
+    "pll-y": {
+      "mainFormulaId": "p1-y",
+      "formulas": [
+        {
+          "id": "p1-y",
+          "expression": "F(R U'R' U') (R U R' F') (R U R' U')(R' F R F')",
+          "tag": "系统"
+        }
+      ]
+    },
+    "pll-z": {
+      "mainFormulaId": "p1-z",
+      "formulas": [
+        {
+          "id": "p1-z",
+          "expression": "M2' U M2' U M' U2 M2' U2 M'",
+          "tag": "系统"
+        }
+      ]
+    }
+  }
+}

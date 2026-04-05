@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useCase } from '../context/CaseContext';
-import { Formula } from '../data/types';
+import { Formula, CubeCase } from '../data/types';
 import { RubikImage } from '../components/RubikImage';
+import { normalizeFormula } from '../utils/formulaUtils';
+import { ORDERED_OLL_IDS, ORDERED_PLL_IDS } from '../data/groups';
 
 export function FormulaDetailPage() {
   const { id } = useParams();
@@ -10,6 +12,7 @@ export function FormulaDetailPage() {
   const { cases, getCase, updateCase } = useCase();
   const [isEditing, setIsEditing] = useState(false);
   const [activeFormulaId, setActiveFormulaId] = useState<string | null>(null);
+  const [formulaErrors, setFormulaErrors] = useState<Record<string, string | null>>({});
 
   const currentCase = getCase(id || '');
 
@@ -63,6 +66,14 @@ export function FormulaDetailPage() {
   const updateFormulaText = (fid: string, expression: string) => {
     handleUpdateFormulas(currentCase.formulas.map(f => f.id === fid ? {...f, expression} : f));
   };
+
+  const handleFormulaBlur = (fid: string, raw: string) => {
+    const { normalized, error } = normalizeFormula(raw);
+    if (normalized !== raw) {
+      updateFormulaText(fid, normalized);
+    }
+    setFormulaErrors(prev => ({ ...prev, [fid]: error }));
+  };
   const updateFormulaTag = (fid: string, tag: string) => {
     handleUpdateFormulas(currentCase.formulas.map(f => f.id === fid ? {...f, tag} : f));
   };
@@ -75,7 +86,14 @@ export function FormulaDetailPage() {
   const alternatives = currentCase.formulas?.filter(f => f.id !== displayFormulaId) || [];
 
   const phasePath = currentCase.id.split('-')[0];
-  const phaseCases = cases.filter(c => c.id.split('-')[0] === phasePath);
+  let phaseCases: CubeCase[] = [];
+  if (phasePath === 'oll') {
+    phaseCases = ORDERED_OLL_IDS.map(id => cases.find(c => c.id === id)).filter(Boolean) as CubeCase[];
+  } else if (phasePath === 'pll') {
+    phaseCases = ORDERED_PLL_IDS.map(id => cases.find(c => c.id === id)).filter(Boolean) as CubeCase[];
+  } else {
+    phaseCases = cases.filter(c => c.id.split('-')[0] === phasePath);
+  }
 
   const displayTitle = phasePath === 'pll' ? `${currentCase.alias} Perm` : currentCase.name;
 
@@ -201,8 +219,14 @@ export function FormulaDetailPage() {
                      placeholder="填入魔方公式 (如: R U R' U')" 
                      value={f.expression} 
                      onChange={e => updateFormulaText(f.id, e.target.value)} 
-                     className="w-full p-3 font-mono font-bold text-lg bg-white border border-gray-200 rounded-lg mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                     onBlur={e => handleFormulaBlur(f.id, e.target.value)}
+                     className={`w-full p-3 font-mono font-bold text-lg bg-white border rounded-lg mb-1 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all ${formulaErrors[f.id] ? 'border-red-300' : 'border-gray-200'}`}
                   />
+                  {formulaErrors[f.id] && (
+                    <div className="text-xs text-red-500 font-medium mb-2 px-1">
+                      ⚠️ {formulaErrors[f.id]}
+                    </div>
+                  )}
                   <input 
                      type="text" 
                      placeholder="备注特征/手法 (如 左手公式, 背后插入)" 

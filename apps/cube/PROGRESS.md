@@ -16,6 +16,7 @@
 | CP-2.0 | App Data Import & Export (JSON Schema) | ✅ | ✅ | ✅ | ✅ | ✅ | **✅ Complete** |
 | CP-2.1 | Data Decoupling & Configuration JSON | ✅ | ✅ | ✅ | ✅ | ✅ | **✅ Complete** |
 | CP-3.0 | Formula Image Spin Integration | ✅ | ✅ | ✅ | ✅ | ✅ | **✅ Complete** |
+| CP-4.0 | Cloud Profile Storage | ✅ | ✅ | ✅ | ✅ | ✅ | **✅ Complete** |
 
 **Legend**: 🔲 Not Done · ⏳ In Progress · ✅ Done
 
@@ -25,7 +26,7 @@
 
 > **If any task below is marked ⏳, the next AI session MUST resume it before starting anything new.**
 
-None — all completed to CP-3.0. Image Spin feature is live.
+None — all completed to CP-4.0. Cloud Profile system is live locally.
 
 ---
 
