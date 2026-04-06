@@ -164,3 +164,87 @@ export function normalizeFormula(raw: string): { normalized: string; error: stri
 
   return { normalized: result, error };
 }
+
+/**
+ * Generate the inverse of a formula.
+ * Standard behavior:
+ * - Reverse the order of moves
+ * - Invert each move: R -> R', R' -> R, R2 -> R2, R2' -> R2
+ * - Keep structural groups and repetitions intact, but recursively invert them: (A B)3 -> (B' A')3
+ */
+export function inverseFormula(formula: string): string {
+  const { normalized, error } = normalizeFormula(formula);
+  if (error || !normalized) return '';
+
+  const tokens = tokenize(normalized);
+
+  type AstNode = { type: 'move'; val: string } | { type: 'group'; children: AstNode[]; mult: string };
+  let i = 0;
+
+  function parseBlock(): AstNode[] {
+    const nodes: AstNode[] = [];
+    while (i < tokens.length) {
+      const t = tokens[i];
+      if (t === '(') {
+        i++;
+        const children = parseBlock();
+        let mult = '';
+        if (i < tokens.length && /^\d+$/.test(tokens[i])) {
+          mult = tokens[i];
+          i++;
+        }
+        nodes.push({ type: 'group', children, mult });
+      } else if (t === ')') {
+        i++;
+        return nodes;
+      } else {
+        nodes.push({ type: 'move', val: t });
+        i++;
+      }
+    }
+    return nodes;
+  }
+
+  const ast = parseBlock();
+
+  function invertAst(nodes: AstNode[]): AstNode[] {
+    const inv: AstNode[] = [];
+    for (let j = nodes.length - 1; j >= 0; j--) {
+      const n = nodes[j];
+      if (n.type === 'move') {
+        let v = n.val;
+        if (v.endsWith("'")) {
+          v = v.slice(0, -1);
+        } else if (v.endsWith('2')) {
+          // 180 degree turn is its own inverse
+          v = v;
+        } else {
+          v = v + "'";
+        }
+        inv.push({ type: 'move', val: v });
+      } else {
+        inv.push({ type: 'group', children: invertAst(n.children), mult: n.mult });
+      }
+    }
+    return inv;
+  }
+
+  const invertedAst = invertAst(ast);
+
+  function astToString(nodes: AstNode[]): string {
+    let str = '';
+    for (let j = 0; j < nodes.length; j++) {
+      const n = nodes[j];
+      if (j > 0) str += ' ';
+      
+      if (n.type === 'move') {
+        str += n.val;
+      } else {
+        str += '(' + astToString(n.children) + ')' + n.mult;
+      }
+    }
+    return str;
+  }
+
+  return normalizeFormula(astToString(invertedAst)).normalized;
+}

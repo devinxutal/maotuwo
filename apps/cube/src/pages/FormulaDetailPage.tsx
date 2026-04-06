@@ -3,7 +3,7 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useCase } from '../context/CaseContext';
 import { Formula, CubeCase } from '../data/types';
 import { RubikImage } from '../components/RubikImage';
-import { normalizeFormula } from '../utils/formulaUtils';
+import { normalizeFormula, inverseFormula } from '../utils/formulaUtils';
 import { ORDERED_OLL_IDS, ORDERED_PLL_IDS } from '../data/groups';
 
 export function FormulaDetailPage() {
@@ -141,6 +141,16 @@ export function FormulaDetailPage() {
                      <span className="inline-block mt-4 px-3 py-1 border border-gray-200 text-gray-600 bg-gray-50 rounded-full text-xs font-bold">
                          {displayFormula.tag}
                      </span>
+                 )}
+                 {displayFormula && displayFormula.expression && inverseFormula(displayFormula.expression) && (
+                     <div className="mt-4 flex justify-center">
+                        <div className="flex items-center gap-2 bg-gray-50/80 border border-gray-200 rounded-2xl px-4 py-2.5 drop-shadow-sm">
+                           <span className="text-xs font-extrabold text-gray-400 tracking-wider whitespace-nowrap">逆公式</span>
+                           <div className="text-[14px] font-bold text-gray-500 tracking-wide opacity-80 mix-blend-multiply">
+                              {renderFormula(inverseFormula(displayFormula.expression), "justify-center")}
+                           </div>
+                        </div>
+                     </div>
                  )}
              </div>
 
