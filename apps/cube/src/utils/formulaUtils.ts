@@ -37,7 +37,7 @@ export function fixFullWidth(input: string): string {
 
 /**
  * Tokenize a formula string into an array of tokens.
- * Each token is one of: a move (e.g. "R", "R'", "R2", "R2'"), "(" or ")".
+ * Each token is one of: a move (e.g. "R", "R'", "R2", "R2'"), "(", ")", or a number (e.g. "3").
  * Unknown characters are returned as-is for error reporting.
  */
 export function tokenize(formula: string): string[] {
@@ -53,6 +53,17 @@ export function tokenize(formula: string): string[] {
     if (ch === '(' || ch === ')') {
       tokens.push(ch);
       i++;
+      continue;
+    }
+
+    // Numbers (repetition after parentheses)
+    if (/\d/.test(ch)) {
+      let num = '';
+      while (i < formula.length && /\d/.test(formula[i])) {
+        num += formula[i];
+        i++;
+      }
+      tokens.push(num);
       continue;
     }
 
@@ -88,12 +99,19 @@ export function tokenize(formula: string): string[] {
  */
 export function validateTokens(tokens: string[]): string | null {
   let depth = 0;
-  for (const t of tokens) {
+  for (let i = 0; i < tokens.length; i++) {
+    const t = tokens[i];
     if (t === '(') {
       depth++;
     } else if (t === ')') {
       depth--;
       if (depth < 0) return '括号不匹配：多余的 )';
+    } else if (/^\d+$/.test(t)) {
+      // Repetition number must follow a closing parenthesis
+      const prev = i > 0 ? tokens[i - 1] : '';
+      if (prev !== ')') {
+        return `数字 "${t}" 只能跟在右括号 ")" 后面`;
+      }
     } else if (!BASE_RE.test(t[0])) {
       return `无效字符: "${t}"`;
     }
@@ -112,7 +130,8 @@ export function validateTokens(tokens: string[]): string | null {
  * - Space between every two adjacent move tokens
  * - No space after "(" or before ")"
  * - Space before "(" unless at start
- * - Space after ")" unless at end or followed by ")"
+ * - Space after ")" unless at end or followed by ")" or a number
+ * - No space between ")" and a following number
  */
 export function normalizeFormula(raw: string): { normalized: string; error: string | null } {
   const fixed = fixFullWidth(raw.trim());
@@ -133,6 +152,8 @@ export function normalizeFormula(raw: string): { normalized: string; error: stri
         // No space before closing paren
       } else if (prev === '(') {
         // No space after opening paren
+      } else if (/^\d+$/.test(token) && prev === ')') {
+        // No space between closing paren and the number
       } else {
         result += ' ';
       }
