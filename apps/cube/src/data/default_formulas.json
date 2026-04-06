@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": "2026-04-04T08:51:22.967Z",
+  "timestamp": "2026-04-06T08:07:27.718Z",
   "data": {
     "f2l-1": {
       "mainFormulaId": "f1-1",
@@ -428,8 +428,14 @@
       "formulas": [
         {
           "id": "o1-2",
-          "expression": "r U r' U2 r U2' R' U2 R U' r'",
+          "expression": "F (R U R' U') F' f (R U R' U') f'",
           "tag": "系统"
+        },
+        {
+          "id": "1775450893299",
+          "expression": "r U r' U2 r U2' R' U2 R U' r'",
+          "tag": "系统",
+          "spin": 90
         }
       ]
     },
@@ -438,8 +444,9 @@
       "formulas": [
         {
           "id": "o1-3",
-          "expression": "f R U R' U' f' U' F R U R' U' F'",
-          "tag": "系统"
+          "expression": "f (R U R' U') f' U' F (R U R' U') F'",
+          "tag": "系统",
+          "spin": 90
         }
       ]
     },
@@ -448,7 +455,7 @@
       "formulas": [
         {
           "id": "o1-4",
-          "expression": "f R U R' U' f' U F R U R' U' F'",
+          "expression": "f (R U R' U') f' U F (R U R' U') F'",
           "tag": "系统"
         }
       ]
@@ -458,8 +465,9 @@
       "formulas": [
         {
           "id": "o1-5",
-          "expression": "l' U2 L U L' U l",
-          "tag": "系统"
+          "expression": "(r' U2) (R U R' U) r",
+          "tag": "系统",
+          "spin": 0
         }
       ]
     },
@@ -468,8 +476,9 @@
       "formulas": [
         {
           "id": "o1-6",
-          "expression": "r U2 R' U' R U' r'",
-          "tag": "系统"
+          "expression": "(r U' U') (R' U' R U' r')",
+          "tag": "系统",
+          "spin": 180
         }
       ]
     },
@@ -488,8 +497,9 @@
       "formulas": [
         {
           "id": "o1-8",
-          "expression": "l' U' L U' L' U2 l",
-          "tag": "系统"
+          "expression": "r' U' R U' R' U2 r",
+          "tag": "系统",
+          "spin": 180
         }
       ]
     },
@@ -498,8 +508,9 @@
       "formulas": [
         {
           "id": "o1-9",
-          "expression": "R U R' U' R' F R2 U R' U' F'",
-          "tag": "系统"
+          "expression": "(R U R' U') (R' F) (R2 U R' U') F'",
+          "tag": "系统",
+          "spin": 270
         }
       ]
     },
@@ -508,8 +519,9 @@
       "formulas": [
         {
           "id": "o1-10",
-          "expression": "R U R' U R' F R F' R U2 R'",
-          "tag": "系统"
+          "expression": "(R U R' U) (R' F R F') (R U' U' R')",
+          "tag": "系统",
+          "spin": 270
         }
       ]
     },
@@ -518,8 +530,9 @@
       "formulas": [
         {
           "id": "o1-11",
-          "expression": "r U R' U R' F R F' R U2 r'",
-          "tag": "系统"
+          "expression": "(r U R' U) (R' F R F') R U2 r'",
+          "tag": "系统",
+          "spin": 90
         }
       ]
     },
@@ -528,7 +541,7 @@
       "formulas": [
         {
           "id": "o1-12",
-          "expression": "M' R' U' R U' R' U2 R U' R r'",
+          "expression": "F (R U R' U') F' U F (R U R' U') F'",
           "tag": "系统"
         }
       ]
@@ -538,7 +551,7 @@
       "formulas": [
         {
           "id": "o1-13",
-          "expression": "F U R U' R2' F' R U R U' R'",
+          "expression": "F (U R U') (R2 F') (R U R U' R')",
           "tag": "系统"
         }
       ]
@@ -558,8 +571,9 @@
       "formulas": [
         {
           "id": "o1-15",
-          "expression": "l' U' l L' U' L U l' U l",
-          "tag": "系统"
+          "expression": "(l' U' l) (L' U' L U) (l' U l)",
+          "tag": "系统",
+          "spin": 180
         }
       ]
     },
@@ -568,8 +582,9 @@
       "formulas": [
         {
           "id": "o1-16",
-          "expression": "r U r' R U R' U' r U' r'",
-          "tag": "系统"
+          "expression": "(r U r') (R U R' U') (r U' r')",
+          "tag": "系统",
+          "spin": 180
         }
       ]
     },
@@ -578,7 +593,7 @@
       "formulas": [
         {
           "id": "o1-17",
-          "expression": "F R' F' R2 r' U R U' R' U' M'",
+          "expression": "(R U R' U) (R' F R F') U2 (R' F R F')",
           "tag": "系统"
         }
       ]
@@ -588,8 +603,9 @@
       "formulas": [
         {
           "id": "o1-18",
-          "expression": "r U R' U R U2 r2' U' R U' R' U2 r",
-          "tag": "系统"
+          "expression": "F (R U R' U) y' (R' U2) (R' F R F')",
+          "tag": "系统",
+          "spin": 90
         }
       ]
     },
@@ -598,7 +614,7 @@
       "formulas": [
         {
           "id": "o1-19",
-          "expression": "M U R U R' U' R' F R F' M'",
+          "expression": "(M' U) (R U R' U') M (R' F R F')",
           "tag": "系统"
         }
       ]
@@ -608,7 +624,7 @@
       "formulas": [
         {
           "id": "o1-20",
-          "expression": "r U R' U' M2 U R U' R' U' M'",
+          "expression": "(r' R U) (R U R' U') (r2 R2') (U R U' r')",
           "tag": "系统"
         }
       ]
@@ -618,8 +634,9 @@
       "formulas": [
         {
           "id": "o1-21",
-          "expression": "R U2 R' U' R U R' U' R U' R'",
-          "tag": "系统"
+          "expression": "(R U U R' U') (R U R' U') (R U' R')",
+          "tag": "系统",
+          "spin": 90
         }
       ]
     },
@@ -628,7 +645,7 @@
       "formulas": [
         {
           "id": "o1-22",
-          "expression": "R U2 R2' U' R2 U' R2' U2 R",
+          "expression": "R U'U' (R2' U') (R2 U') R2' U2 R",
           "tag": "系统"
         }
       ]
@@ -638,7 +655,7 @@
       "formulas": [
         {
           "id": "o1-23",
-          "expression": "R2 D' R U2 R' D R U2 R",
+          "expression": "(R2 D') (R U' U') (R' D) (R U' U' R)",
           "tag": "系统"
         }
       ]
@@ -648,7 +665,7 @@
       "formulas": [
         {
           "id": "o1-24",
-          "expression": "r U R' U' r' F R F'",
+          "expression": "(r U R' U') (r' F R F')",
           "tag": "系统"
         }
       ]
@@ -658,8 +675,9 @@
       "formulas": [
         {
           "id": "o1-25",
-          "expression": "F' r U r' U' r' F r",
-          "tag": "系统"
+          "expression": "F' (r U R' U') (r' F R)",
+          "tag": "系统",
+          "spin": 270
         }
       ]
     },
@@ -668,8 +686,9 @@
       "formulas": [
         {
           "id": "o1-26",
-          "expression": "R U2 R' U' R U' R'",
-          "tag": "系统"
+          "expression": "R U' U' R' U' R U' R'",
+          "tag": "系统",
+          "spin": 270
         }
       ]
     },
@@ -678,8 +697,9 @@
       "formulas": [
         {
           "id": "o1-27",
-          "expression": "R U R' U R U2 R'",
-          "tag": "系统"
+          "expression": "R' U2 R U R' U R",
+          "tag": "系统",
+          "spin": 270
         }
       ]
     },
@@ -689,7 +709,8 @@
         {
           "id": "o1-28",
           "expression": "M U M' U2 M U M'",
-          "tag": "系统"
+          "tag": "系统",
+          "spin": 180
         }
       ]
     },
@@ -698,8 +719,9 @@
       "formulas": [
         {
           "id": "o1-29",
-          "expression": "R U R' U' R U' R' F' U' F R U R'",
-          "tag": "系统"
+          "expression": "(r U2 R' U' R U' r') (R' U2 R U R' U R)",
+          "tag": "系统",
+          "spin": 180
         }
       ]
     },
@@ -708,7 +730,7 @@
       "formulas": [
         {
           "id": "o1-30",
-          "expression": "F R' F R2 U' R' U' R U R' F2",
+          "expression": "(r' U2 R U R' U r) (R U2 R' U' R U' R')",
           "tag": "系统"
         }
       ]
@@ -718,8 +740,9 @@
       "formulas": [
         {
           "id": "o1-31",
-          "expression": "R' U' F U R U' R' F' R",
-          "tag": "系统"
+          "expression": "(R' U' F) (U R U') (R' F' R)",
+          "tag": "系统",
+          "spin": 180
         }
       ]
     },
@@ -728,7 +751,7 @@
       "formulas": [
         {
           "id": "o1-32",
-          "expression": "S R U R' U' R' F R f'",
+          "expression": "(R U) (B' U') (R' U R B R')",
           "tag": "系统"
         }
       ]
@@ -738,7 +761,7 @@
       "formulas": [
         {
           "id": "o1-33",
-          "expression": "R U R' U' R' F R F'",
+          "expression": "(R U R' U') (R' F R F')",
           "tag": "系统"
         }
       ]
@@ -758,8 +781,9 @@
       "formulas": [
         {
           "id": "o1-35",
-          "expression": "R U2 R2' F R F' R U2 R'",
-          "tag": "系统"
+          "expression": "R U' U' (R2' F R F') (R U' U' R')",
+          "tag": "系统",
+          "spin": 0
         }
       ]
     },
@@ -768,7 +792,7 @@
       "formulas": [
         {
           "id": "o1-36",
-          "expression": "L' U' L U' L' U L U L F' L' F",
+          "expression": "(R' U' R U') (R' U R U) (l U' R' U) x",
           "tag": "系统"
         }
       ]
@@ -778,8 +802,9 @@
       "formulas": [
         {
           "id": "o1-37",
-          "expression": "F R' F' R U R U' R'",
-          "tag": "系统"
+          "expression": "F (R U' R' U') (R U R' F')",
+          "tag": "系统",
+          "spin": 90
         }
       ]
     },
@@ -788,8 +813,9 @@
       "formulas": [
         {
           "id": "o1-38",
-          "expression": "R U R' U R U' R' U' R' F R F'",
-          "tag": "系统"
+          "expression": "(R U R' U) (R U' R' U') (R' F R F')",
+          "tag": "系统",
+          "spin": 180
         }
       ]
     },
@@ -798,7 +824,7 @@
       "formulas": [
         {
           "id": "o1-39",
-          "expression": "L F' L' U' L U F U' L'",
+          "expression": "L F' (L' U' L U) F (U' L')",
           "tag": "系统"
         }
       ]
@@ -808,7 +834,7 @@
       "formulas": [
         {
           "id": "o1-40",
-          "expression": "R' F R U R' U' F' U R",
+          "expression": "R' F (R U R' U') F' (U R)",
           "tag": "系统"
         }
       ]
@@ -818,8 +844,9 @@
       "formulas": [
         {
           "id": "o1-41",
-          "expression": "R U R' U R U2 R' F R U R' U' F'",
-          "tag": "系统"
+          "expression": "(R U R' U R U2 R') F (R U R' U') F'",
+          "tag": "系统",
+          "spin": 180
         }
       ]
     },
@@ -828,7 +855,7 @@
       "formulas": [
         {
           "id": "o1-42",
-          "expression": "R' U' R U' R' U2 R F R U R' U' F'",
+          "expression": "(R U R' U R U2 R') F (R U R' U') F'",
           "tag": "系统"
         }
       ]
@@ -838,7 +865,7 @@
       "formulas": [
         {
           "id": "o1-43",
-          "expression": "F' U' L' U L F",
+          "expression": "f' (L' U' L U) f",
           "tag": "系统"
         }
       ]
@@ -848,7 +875,7 @@
       "formulas": [
         {
           "id": "o1-44",
-          "expression": "F U R U' R' F'",
+          "expression": "f (R U R' U') f'",
           "tag": "系统"
         }
       ]
@@ -858,7 +885,7 @@
       "formulas": [
         {
           "id": "o1-45",
-          "expression": "F R U R' U' F'",
+          "expression": "F (R U R' U') F'",
           "tag": "系统"
         }
       ]
@@ -868,7 +895,7 @@
       "formulas": [
         {
           "id": "o1-46",
-          "expression": "R' U' R' F R F' U R",
+          "expression": "(R' U') (R' F R F') (U R)",
           "tag": "系统"
         }
       ]
@@ -880,6 +907,11 @@
           "id": "o1-47",
           "expression": "R' U' R' F R F' R' F R F' U R",
           "tag": "系统"
+        },
+        {
+          "id": "1775449493117",
+          "expression": "F' (L' U' L U) 2 F",
+          "tag": "左手镜像"
         }
       ]
     },
@@ -888,18 +920,18 @@
       "formulas": [
         {
           "id": "o1-48",
-          "expression": "F R U R' U' R U R' U' F'",
+          "expression": "F (R U R' U')2 F'",
           "tag": "系统"
         }
       ]
     },
     "oll-49": {
-      "mainFormulaId": "o1-49",
+      "mainFormulaId": "1775459793973",
       "formulas": [
         {
-          "id": "o1-49",
-          "expression": "r U' r2' U r2 U r2' U' r",
-          "tag": "系统"
+          "id": "1775459793973",
+          "expression": "(R B') (R2 F) (R2 B) (R2 F') R",
+          "tag": "主公式"
         }
       ]
     },
@@ -908,8 +940,9 @@
       "formulas": [
         {
           "id": "o1-50",
-          "expression": "r' U r2 U' r2' U' r2 U r'",
-          "tag": "系统"
+          "expression": "(R' F) (R2 B') (R2 F') (R2 B) R'",
+          "tag": "系统",
+          "spin": 180
         }
       ]
     },
@@ -918,8 +951,9 @@
       "formulas": [
         {
           "id": "o1-51",
-          "expression": "f R U R' U' R U R' U' f'",
-          "tag": "系统"
+          "expression": "f (R U R' U')2 f'",
+          "tag": "系统",
+          "spin": 180
         }
       ]
     },
@@ -928,7 +962,7 @@
       "formulas": [
         {
           "id": "o1-52",
-          "expression": "R U R' U R U' B U' B' R'",
+          "expression": "(R' U' R U') (R' U) y' (R' U R B)",
           "tag": "系统"
         }
       ]
@@ -938,8 +972,9 @@
       "formulas": [
         {
           "id": "o1-53",
-          "expression": "r' U' R U' R' U R U' R' U2 r",
-          "tag": "系统"
+          "expression": "r' U2 (R U R' U') (R U R' U) r",
+          "tag": "系统",
+          "spin": 270
         }
       ]
     },
@@ -948,8 +983,9 @@
       "formulas": [
         {
           "id": "o1-54",
-          "expression": "r U R' U R U' R' U R U2 r'",
-          "tag": "系统"
+          "expression": "r U (R' U R U')2 U' r'",
+          "tag": "系统",
+          "spin": 0
         }
       ]
     },
@@ -958,8 +994,9 @@
       "formulas": [
         {
           "id": "o1-55",
-          "expression": "R' F R U R U' R2' F' R2 U' R' U R U R'",
-          "tag": "系统"
+          "expression": "R' F (U R U') (R2' F') (R2 U R' U' R)",
+          "tag": "系统",
+          "spin": 90
         }
       ]
     },
@@ -968,7 +1005,7 @@
       "formulas": [
         {
           "id": "o1-56",
-          "expression": "r' U' r U' R' U R U' R' U R r' U r",
+          "expression": "(r U r') (U R U' R')2 (r U' r')",
           "tag": "系统"
         }
       ]
@@ -978,7 +1015,7 @@
       "formulas": [
         {
           "id": "o1-57",
-          "expression": "R U R' U' M' U R U' r'",
+          "expression": "(R U R' U') M (U R U' r')",
           "tag": "系统"
         }
       ]
@@ -1017,52 +1054,79 @@
       ]
     },
     "pll-f": {
-      "mainFormulaId": "p1-f",
+      "mainFormulaId": "1775305264884",
       "formulas": [
         {
           "id": "p1-f",
           "expression": "U' (R'U R U') R2' b' x (R' U R) y' (R U R' U' R2)",
           "tag": "系统"
+        },
+        {
+          "id": "1775305264884",
+          "expression": "（R' U' F') (R U R' U') (R' F R2 U' R' U') (R U R' U R)",
+          "tag": "主公式"
         }
       ]
     },
     "pll-ga": {
-      "mainFormulaId": "p1-ga",
+      "mainFormulaId": "1775369582273",
       "formulas": [
         {
           "id": "p1-ga",
           "expression": "(R2' u R') (U R' U') (R u' R2') y' (R' U R)",
           "tag": "系统"
+        },
+        {
+          "id": "1775369582273",
+          "expression": "(R2 U R' U) (R' U' R U' R2) (U' D) (R' U R D')",
+          "tag": "常用"
         }
       ]
     },
     "pll-gb": {
-      "mainFormulaId": "p1-gb",
+      "mainFormulaId": "1775369641959",
       "formulas": [
         {
           "id": "p1-gb",
           "expression": "(R' d' F)(R2' u R') U (R U' R) u' R2",
           "tag": "系统"
+        },
+        {
+          "id": "1775369641959",
+          "expression": "(R' U' R U D') (R2 U R' U) (R U' R U' R2') D",
+          "tag": "常用"
         }
       ]
     },
     "pll-gc": {
-      "mainFormulaId": "p1-gc",
+      "mainFormulaId": "1775369677103",
       "formulas": [
         {
           "id": "p1-gc",
           "expression": "(R2' u') (R U' R) U (R' u R2') y (R U'R')",
-          "tag": "系统"
+          "tag": "系统",
+          "spin": 0
+        },
+        {
+          "id": "1775369677103",
+          "expression": "R2' F2 R U2 R U2' R' F (R U R' U') R' F R2",
+          "tag": "常用",
+          "spin": 180
         }
       ]
     },
     "pll-gd": {
-      "mainFormulaId": "p1-gd",
+      "mainFormulaId": "1775369713414",
       "formulas": [
         {
           "id": "p1-gd",
           "expression": "(R U R') y'(R2' u') (R U' R' U) (R' u R2)",
           "tag": "系统"
+        },
+        {
+          "id": "1775369713414",
+          "expression": "(R U R') (U' D) (R2 U' R U') (R' U R' U R2) D'",
+          "tag": "常用"
         }
       ]
     },
@@ -1078,13 +1142,23 @@
       ]
     },
     "pll-ja": {
-      "mainFormulaId": "p1-ja",
+      "mainFormulaId": "1775305558191",
       "formulas": [
         {
           "id": "p1-ja",
           "expression": "z(U' R D')(R2 U R' U') (R2 U) D R'",
           "tag": "系统",
           "spin": 90
+        },
+        {
+          "id": "1775305558191",
+          "expression": "x (R2' F R F') R U2' (r' U r) U2",
+          "tag": "最佳"
+        },
+        {
+          "id": "1775314385041",
+          "expression": "L U' R' U L' U2 R U' R' U2 R",
+          "tag": "顺手"
         }
       ]
     },
@@ -1099,22 +1173,32 @@
       ]
     },
     "pll-na": {
-      "mainFormulaId": "p1-na",
+      "mainFormulaId": "1775308623797",
       "formulas": [
         {
           "id": "p1-na",
           "expression": "z (R' U R') z' (R U2 L' U R') z (U R') z' (R U2 L' U R')",
           "tag": "系统"
+        },
+        {
+          "id": "1775308623797",
+          "expression": "(R U R' U)(R U R' F')(R U R' U')(R' F R2 U' R')(U2 R U' R')",
+          "tag": "最佳"
         }
       ]
     },
     "pll-nb": {
-      "mainFormulaId": "p1-nb",
+      "mainFormulaId": "1775307534367",
       "formulas": [
         {
           "id": "p1-nb",
           "expression": "z (U'R D') (R2 U R'U') z' (R U R') z (R2 U R') D R'",
           "tag": "系统"
+        },
+        {
+          "id": "1775307534367",
+          "expression": "(r' F r2 U r' U' r' F r F') (r' F2 r2 U r' U' r' F r F')",
+          "tag": "主公式"
         }
       ]
     },
@@ -1185,7 +1269,7 @@
       "formulas": [
         {
           "id": "p1-y",
-          "expression": "F(R U'R' U') (R U R' F') (R U R' U')(R' F R F')",
+          "expression": "F (R U' R' U') (R U R' F') (R U R' U') (R' F R F')",
           "tag": "系统"
         }
       ]
@@ -1195,8 +1279,9 @@
       "formulas": [
         {
           "id": "p1-z",
-          "expression": "M2' U M2' U M' U2 M2' U2 M'",
-          "tag": "系统"
+          "expression": "M2 U M2 U M U2 M2 U2 M",
+          "tag": "系统",
+          "spin": 90
         }
       ]
     }

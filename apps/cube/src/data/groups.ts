@@ -18,7 +18,7 @@ export const OLL_GROUPS: FormulaGroup[] = [
   },
   {
     name: "第四组",
-    caseIds: ["oll-18", "oll-19", "oll-20", "oll-35", "oll-37", "oll-49", "oll-50", "oll-53", "oll-54"]
+    caseIds: ["oll-18", "oll-19", "oll-17", "oll-35", "oll-37", "oll-49", "oll-50", "oll-53", "oll-54"]
   },
   {
     name: "第五组",
@@ -30,7 +30,7 @@ export const OLL_GROUPS: FormulaGroup[] = [
   },
   {
     name: "第七组",
-    caseIds: ["oll-13", "oll-14", "oll-15", "oll-16", "oll-17", "oll-52", "oll-55", "oll-56"]
+    caseIds: ["oll-13", "oll-14", "oll-15", "oll-16", "oll-20", "oll-52", "oll-55", "oll-56"]
   }
 ];
 
