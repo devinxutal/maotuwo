@@ -13,8 +13,9 @@ This project is configured to circumvent remote server bandwidth limitations. DO
 1. Run `bash scripts/deploy.sh` from this root directory.
 2. The script will:
    - Produce a production Webpack build locally.
-   - Use `rsync` with delta-transfers and gzip across SSH (via `ecs-maotuwo` key) to send only the differing Bytes to the server.
-   - Trigger `pm2 restart scratch` automatically on the ECS.
+   - Compress the entire build output into a single `build.tar.gz` archive to avoid high transfer file overhead.
+   - Use `rsync -P` to securely upload the archive to the server, supporting resume functionality if connection drops.
+   - Extract the archive on the server and trigger `pm2 restart scratch` automatically.
 
 ## Dev Environment
 - **Port:** `8011`

@@ -25,11 +25,21 @@ export BUILD_TYPE=dev
 npx webpack --mode production
 cd ../../../
 
-# 3. Incremental Delta Transfer (Uses Gzip and Delta comparison)
-echo "📦 [2/3] Syncing delta diffs to ECS server via Rsync..."
+# 3. Compress and Transfer
+echo "📦 [2/3] Packing and transferring to ECS server..."
 ssh -i $KEY_PATH -o StrictHostKeyChecking=no -o ServerAliveInterval=15 $REMOTE_USER@$REMOTE_IP "mkdir -p $REMOTE_PATH"
 
-rsync -avz --delete --timeout=600 -e "ssh -i $KEY_PATH -o StrictHostKeyChecking=no -o ServerAliveInterval=15 -o ServerAliveCountMax=5" $BUILD_DIR/ $REMOTE_USER@$REMOTE_IP:$REMOTE_PATH/build/
+echo "   -> Compressing build directory..."
+tar -czf build.tar.gz -C scratch-editor/packages/scratch-gui/ build/
+
+echo "   -> Transferring build.tar.gz via Rsync..."
+rsync -avP -e "ssh -i $KEY_PATH -o StrictHostKeyChecking=no -o ServerAliveInterval=15 -o ServerAliveCountMax=5" build.tar.gz $REMOTE_USER@$REMOTE_IP:$REMOTE_PATH/
+
+echo "   -> Extracting on server..."
+ssh -i $KEY_PATH -o StrictHostKeyChecking=no -o ServerAliveInterval=15 $REMOTE_USER@$REMOTE_IP "cd $REMOTE_PATH && tar -xzf build.tar.gz && rm build.tar.gz"
+
+echo "   -> Cleaning up local archive..."
+rm build.tar.gz
 
 # 4. Remote Hook (Restart/Boot the static daemon)
 echo "⚙️ [3/3] Reloading ECS web service via PM2..."
