@@ -98,6 +98,9 @@ import oldtimeyLogo from './oldtimey-logo.svg';
 import sharedMessages from '../../lib/shared-messages';
 
 import {AccountMenuOptionsPropTypes} from '../../lib/account-menu-options';
+import SaveCloudModal from './save-cloud-modal.jsx';
+import LoadCloudModal from './load-cloud-modal.jsx';
+import {saveProjectToCloud, loadProjectFromCloud, listCloudProjects} from '../../lib/cloud-storage.js';
 
 const ariaMessages = defineMessages({
     tutorials: {
@@ -195,8 +198,16 @@ class MenuBar extends React.Component {
             'handleKeyPress',
             'handleRestoreOption',
             'getSaveToComputerHandler',
-            'restoreOptionMessage'
+            'restoreOptionMessage',
+            'handleSaveToCloud',
+            'handleLoadFromCloud',
+            'handleCloseSaveCloudModal',
+            'handleCloseLoadCloudModal'
         ]);
+        this.state = {
+            saveCloudModalOpen: false,
+            loadCloudModalOpen: false
+        };
     }
     componentDidMount () {
         document.addEventListener('keydown', this.handleKeyPress);
@@ -336,6 +347,20 @@ class MenuBar extends React.Component {
             />);
         }
         }
+    }
+    handleSaveToCloud () {
+        this.props.onRequestCloseFile();
+        this.setState({ saveCloudModalOpen: true });
+    }
+    handleLoadFromCloud () {
+        this.props.onRequestCloseFile();
+        this.setState({ loadCloudModalOpen: true });
+    }
+    handleCloseSaveCloudModal () {
+        this.setState({ saveCloudModalOpen: false });
+    }
+    handleCloseLoadCloudModal () {
+        this.setState({ loadCloudModalOpen: false });
     }
     buildAboutMenu (onClickAbout) {
         if (!onClickAbout) {
@@ -536,6 +561,22 @@ class MenuBar extends React.Component {
                                                 />
                                             </MenuItem>
                                         )}</SB3Downloader>
+                                    </MenuSection>
+                                    <MenuSection>
+                                        <MenuItem onClick={this.handleSaveToCloud}>
+                                            <FormattedMessage
+                                                defaultMessage="保存到云端"
+                                                description="Menu bar item for saving project to cloud storage"
+                                                id="gui.menuBar.saveToCloud"
+                                            />
+                                        </MenuItem>
+                                        <MenuItem onClick={this.handleLoadFromCloud}>
+                                            <FormattedMessage
+                                                defaultMessage="从云端加载"
+                                                description="Menu bar item for loading project from cloud storage"
+                                                id="gui.menuBar.loadFromCloud"
+                                            />
+                                        </MenuItem>
                                     </MenuSection>
                                 </MenuBarMenu>
                             </div>
@@ -902,6 +943,37 @@ class MenuBar extends React.Component {
                 </div>
 
                 {aboutButton}
+                
+                {this.state.saveCloudModalOpen && (
+                    <SaveCloudModal
+                        defaultFilename={this.props.projectTitle}
+                        onClose={this.handleCloseSaveCloudModal}
+                        onSave={async (filename) => {
+                            // Get project data from VM as Blob (same as "Save to Computer")
+                            const projectBlob = await this.props.saveProjectSb3();
+                            await saveProjectToCloud(filename, projectBlob);
+                        }}
+                    />
+                )}
+                
+                {this.state.loadCloudModalOpen && (
+                    <LoadCloudModal
+                        onClose={this.handleCloseLoadCloudModal}
+                        onListProjects={listCloudProjects}
+                        onLoad={async (filename) => {
+                            const projectData = await loadProjectFromCloud(filename);
+                            // Load project into VM - handle both JSON and Blob formats
+                            if (projectData instanceof Blob) {
+                                // Binary SB3 file
+                                const arrayBuffer = await projectData.arrayBuffer();
+                                await this.props.vm.loadProject(arrayBuffer);
+                            } else {
+                                // JSON format
+                                await this.props.vm.loadProject(projectData);
+                            }
+                        }}
+                    />
+                )}
             </Box>
         );
     }
@@ -1031,6 +1103,7 @@ const mapStateToProps = (state, ownProps) => {
         avatarBadge: user ? user.membership_avatar_badge : null,
         userIsEducator: permissions && permissions.educator,
         vm: state.scratchGui.vm,
+        saveProjectSb3: state.scratchGui.vm.saveProjectSb3.bind(state.scratchGui.vm),
         mode220022BC: isTimeTravel220022BC(state),
         mode1920: isTimeTravel1920(state),
         mode1990: isTimeTravel1990(state),
