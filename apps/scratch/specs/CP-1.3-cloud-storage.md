@@ -1,6 +1,6 @@
 # CP-1.3: 项目云存储功能 (Cloud Project Storage)
 
-> **Status**: `APPROVED`
+> **Status**: `COMPLETED`
 > **Created**: 2026-04-18
 > **Last Updated**: 2026-04-18
 
@@ -80,11 +80,13 @@
 
 ## 4. Acceptance Criteria
 
-- [ ] AC-1: File 菜单显示 "保存至云端" 和 "从云端加载" 选项
-- [ ] AC-2: 点击保存弹出文件名输入对话框
-- [ ] AC-3: 项目成功保存到服务器 `/home/maotuwo/scratch-projects/`
-- [ ] AC-4: 点击加载显示已保存项目列表，选择后加载成功
-- [ ] AC-5: 加载的项目可以正常编辑和再次保存
+- [x] AC-1: File 菜单显示 "保存到云端" 和 "从云端加载" 选项
+- [x] AC-2: 点击保存弹出对话框，显示已存在项目列表
+- [x] AC-3: 项目成功保存到服务器 `/home/maotuwo/scratch-server/data/`
+- [x] AC-4: 点击加载显示已保存项目列表，选择后加载成功
+- [x] AC-5: 加载的项目可以正常编辑和再次保存
+- [x] AC-6: 保存时可直接点选已存在文件进行覆盖
+- [x] AC-7: 每个文件都有独立的删除按钮
 
 ---
 
@@ -121,4 +123,32 @@
 
 ## Implementation Notes
 
-> *Filled in after implementation.*
+**Completed**: 2026-04-18
+
+### What was done
+
+1. **Backend API** (`server/index.js`):
+   - Express.js server on port 8012
+   - Endpoints: POST /api/projects/:name, GET /api/projects/list, GET /api/projects/load/:filename, DELETE /api/projects/delete/:filename
+   - Supports both JSON and binary (SB3/ZIP) file formats
+   - Files stored in `/home/maotuwo/scratch-server/data/`
+
+2. **Frontend Components**:
+   - `save-cloud-modal.jsx`: Save dialog with file list, overwrite confirmation, and delete buttons
+   - `load-cloud-modal.jsx`: Load dialog with file list and delete buttons
+   - `cloud-modal.css`: Custom dark overlay (hsla(0, 0%, 0%, 0.6)) and white dialog styling
+   - `cloud-storage.js`: API client for save/load/delete operations
+
+3. **Menu Integration** (`menu-bar.jsx`):
+   - Added "保存到云端" and "从云端加载" menu items in File menu
+   - Connected to VM's `saveProjectSb3()` for proper binary export
+
+4. **Features**:
+   - File list with size and modification time
+   - Click existing file to select for overwrite
+   - Delete button with confirmation for each file
+   - Chinese localization for all UI elements
+
+### Deployment
+- Frontend: http://8.130.44.101:8011 (PM2: scratch)
+- Backend: http://8.130.44.101:8012 (PM2: scratch-api)
