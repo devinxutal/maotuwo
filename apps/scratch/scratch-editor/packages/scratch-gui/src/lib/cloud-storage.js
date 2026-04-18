@@ -1,11 +1,11 @@
 /**
  * Cloud Storage API client for Scratch project save/load
+ * 
+ * Uses relative paths so Nginx can handle the routing.
+ * API endpoints should be proxied from /api/* to the backend server.
  */
 
-// Use environment-specific API URL
-const API_BASE = process.env.NODE_ENV === 'production' 
-  ? 'http://8.130.44.101:8012' 
-  : 'http://localhost:8012';
+const API_PREFIX = '/api';
 
 /**
  * Save project to cloud
@@ -18,7 +18,7 @@ export const saveProjectToCloud = async (filename, projectBlob) => {
     const formData = new FormData();
     formData.append('project', projectBlob, `${filename}.sb3`);
     
-    const response = await fetch(`${API_BASE}/api/projects/${encodeURIComponent(filename)}`, {
+    const response = await fetch(`${API_PREFIX}/projects/${encodeURIComponent(filename)}`, {
         method: 'POST',
         body: formData
     });
@@ -36,7 +36,7 @@ export const saveProjectToCloud = async (filename, projectBlob) => {
  * @returns {Promise<Array>} List of projects
  */
 export const listCloudProjects = async () => {
-    const response = await fetch(`${API_BASE}/api/projects/list`);
+    const response = await fetch(`${API_PREFIX}/projects/list`);
 
     if (!response.ok) {
         const error = await response.json();
@@ -53,7 +53,7 @@ export const listCloudProjects = async () => {
  * @returns {Promise<Blob>} Project data as Blob
  */
 export const loadProjectFromCloud = async (filename) => {
-    const response = await fetch(`${API_BASE}/api/projects/load/${encodeURIComponent(filename)}`);
+    const response = await fetch(`${API_PREFIX}/projects/load/${encodeURIComponent(filename)}`);
 
     if (!response.ok) {
         const error = await response.json();
@@ -70,7 +70,7 @@ export const loadProjectFromCloud = async (filename) => {
  * @returns {Promise<object>} Delete result
  */
 export const deleteProjectFromCloud = async (filename) => {
-    const response = await fetch(`${API_BASE}/api/projects/delete/${encodeURIComponent(filename)}`, {
+    const response = await fetch(`${API_PREFIX}/projects/delete/${encodeURIComponent(filename)}`, {
         method: 'DELETE'
     });
 
