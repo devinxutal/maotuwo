@@ -19,10 +19,17 @@ echo "============================================="
 # 2. Local Build (Heavy lifting done locally)
 echo "🚀 [1/3] Starting local production build (Minifying assets)..."
 cd scratch-editor/packages/scratch-gui
-export NODE_ENV=production
-export PATH="/opt/homebrew/bin:$PATH"
-export BUILD_TYPE=dev
-npx webpack --mode production
+
+# Ensure dependencies are built (vm, render, etc.)
+echo "   -> Building workspace dependencies..."
+cd ../..
+npm run build
+
+# Build the GUI playground to 'build/' directory
+echo "   -> Building scratch-gui playground..."
+cd packages/scratch-gui
+npm run build:dev
+
 cd ../../../
 
 # 3. Compress and Transfer

@@ -1,6 +1,6 @@
 # CP-1.2: ECS 低带宽自动化部署 (Low-bandwidth Deployment)
 
-> **Status**: `APPROVED`
+> **Status**: `COMPLETED`
 > **Created**: 2026-04-12
 > **Last Updated**: 2026-04-12
 
@@ -38,10 +38,10 @@ The purpose of this checkpoint is to establish a fast, reliable, and low-bandwid
 
 ## 4. Acceptance Criteria
 
-- [ ] AC-1: Running `bash scripts/deploy.sh` triggers local build without issues.
-- [ ] AC-2: `deploy.sh` runs `rsync` passing correctly the local SSH key.
-- [ ] AC-3: Deployment successfully mirrors the local `build` assets into the `deployment/` path on the ECS server.
-- [ ] AC-4: PM2 service "scratch" is properly spun up or restarted remotely, listening on port 8011.
+- [x] AC-1: Running `bash scripts/deploy.sh` triggers local build without issues.
+- [x] AC-2: `deploy.sh` runs `rsync` passing correctly the local SSH key.
+- [x] AC-3: Deployment successfully mirrors the local `build` assets into the `deployment/` path on the ECS server.
+- [x] AC-4: PM2 service "scratch" is properly spun up or restarted remotely, listening on port 8011.
 
 ---
 
@@ -54,4 +54,37 @@ The purpose of this checkpoint is to establish a fast, reliable, and low-bandwid
 
 ## Implementation Notes
 
-> *Filled in after implementation.*
+**Completed**: 2026-04-18
+
+### What was done
+
+1. **Local Build**: `npm run build` in scratch-editor monorepo builds all workspace dependencies, then `npm run build:dev` in scratch-gui package builds the playground to `build/` directory
+
+2. **Deploy Script** (`scripts/deploy.sh`):
+   - Builds locally (bandwidth-efficient approach)
+   - Compresses `build/` directory to `build.tar.gz`
+   - Uses `rsync` with SSH key authentication to transfer to ECS
+   - Extracts and cleans up on remote server
+   - Uses PM2 to manage the `serve` process on port 8011
+
+3. **Server Configuration**:
+   - ECS IP: `8.130.44.101`
+   - Deployment path: `/home/maotuwo/deployment/scratch/build`
+   - PM2 service: `scratch` running on port 8011
+   - Service is confirmed running and responding with HTTP 200
+
+### Verification
+
+```bash
+# Check service status
+$ pm2 status
+┌────┬───────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name          │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼───────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 3  │ scratch       │ default     │ N/A     │ fork    │ 3010592  │ 5D     │ 1    │ online    │ 0%       │ 57.2mb   │ maotuwo  │ disabled │
+└────┴───────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+
+# Verify HTTP response
+$ curl -s -o /dev/null -w '%{http_code}' http://localhost:8011/
+200
+```
