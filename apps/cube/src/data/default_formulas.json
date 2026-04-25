@@ -3,363 +3,1012 @@
   "timestamp": "2026-04-06T08:07:27.718Z",
   "data": {
     "f2l-1": {
-      "mainFormulaId": "f1-1",
+      "mainFormulaId": "f1-1-1",
       "formulas": [
         {
-          "id": "f1-1",
-          "expression": "U R U' R'",
-          "tag": "系统",
-          "spin": 0
+          "id": "f1-1-1",
+          "expression": "U (R U' R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-1-2",
+          "expression": "R' F R F'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-1-3",
+          "expression": "U2 (R U2 R')",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-2": {
-      "mainFormulaId": "f1-2",
+      "mainFormulaId": "f1-2-1",
       "formulas": [
         {
-          "id": "f1-2",
-          "expression": "U' L' U L",
-          "tag": "系统"
+          "id": "f1-2-1",
+          "expression": "y' U' (R' U R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-2-2",
+          "expression": "U' (F' U F)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-2-3",
+          "expression": "F R' F' R",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-2-4",
+          "expression": "y U' (L' U L)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-2-5",
+          "expression": "d' L' U L",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-3": {
-      "mainFormulaId": "f1-3",
+      "mainFormulaId": "f1-3-1",
       "formulas": [
         {
-          "id": "f1-3",
-          "expression": "U' R U R' U R U' R'",
-          "tag": "系统"
+          "id": "f1-3-1",
+          "expression": "F' U' F",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-3-2",
+          "expression": "y' (R' U' R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-3-3",
+          "expression": "y (L' U' L)",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-4": {
-      "mainFormulaId": "f1-4",
+      "mainFormulaId": "f1-4-1",
       "formulas": [
         {
-          "id": "f1-4",
-          "expression": "U L' U' L U' L' U L",
-          "tag": "系统"
+          "id": "f1-4-1",
+          "expression": "(R U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-4-2",
+          "expression": "y F U F'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-4-3",
+          "expression": "y' f R f'",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-5": {
-      "mainFormulaId": "f1-5",
+      "mainFormulaId": "f1-5-1",
       "formulas": [
         {
-          "id": "f1-5",
-          "expression": "(R U R') U2 (R U' R')",
-          "tag": "系统"
+          "id": "f1-5-1",
+          "expression": "(U' R U R') U2 (R U' R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-5-2",
+          "expression": "(U' R U R') U (R' F R F')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-5-3",
+          "expression": "U' (R U R') U' R U2 R'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-5-4",
+          "expression": "U F' R' F' R F",
+          "tag": "左前空槽"
+        },
+        {
+          "id": "f1-5-5",
+          "expression": "U R F R' F' R'",
+          "tag": "右后空槽"
         }
       ]
     },
     "f2l-6": {
-      "mainFormulaId": "f1-6",
+      "mainFormulaId": "f1-6-1",
       "formulas": [
         {
-          "id": "f1-6",
-          "expression": "(L' U' L) U2 (L' U L)",
-          "tag": "系统"
+          "id": "f1-6-1",
+          "expression": "d (R' U' R) U2' (R' U R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-6-2",
+          "expression": "y' (U R' U' R) U2 (R' U R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-6-3",
+          "expression": "U' (r U' R' U) (R U r')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-6-4",
+          "expression": "y F2 (R U R' U') F2",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-6-5",
+          "expression": "U' F' R' F R F",
+          "tag": "左前空槽"
+        },
+        {
+          "id": "f1-6-6",
+          "expression": "U' R F R F' R'",
+          "tag": "右后空槽"
         }
       ]
     },
     "f2l-7": {
-      "mainFormulaId": "f1-7",
+      "mainFormulaId": "f1-7-1",
       "formulas": [
         {
-          "id": "f1-7",
-          "expression": "U' (R U R') U (R U R')",
-          "tag": "系统"
+          "id": "f1-7-1",
+          "expression": "U' (R U2' R') U2 (R U' R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-7-2",
+          "expression": "(U' R U2 R')2",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-8": {
-      "mainFormulaId": "f1-8",
+      "mainFormulaId": "f1-8-1",
       "formulas": [
         {
-          "id": "f1-8",
-          "expression": "U (L' U' L) U' (L' U' L)",
-          "tag": "系统"
+          "id": "f1-8-1",
+          "expression": "d (R' U2 R) U2' (R' U R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-8-2",
+          "expression": "y' U (R' U2 R) U2 (R' U R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-8-3",
+          "expression": "U (R' F R F')2 (R U' R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-8-4",
+          "expression": "(r' U2) (R2 U R2 U r)",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-9": {
-      "mainFormulaId": "f1-9",
+      "mainFormulaId": "f1-9-1",
       "formulas": [
         {
-          "id": "f1-9",
-          "expression": "U' (R U' R') U (R U R')",
-          "tag": "系统"
+          "id": "f1-9-1",
+          "expression": "U' R U' R' d R' U' R",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-9-2",
+          "expression": "U' R U' R' U (F' U' F)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-9-3",
+          "expression": "d (R' U' R U') (R' U' R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-9-4",
+          "expression": "F (R U R' U') F' R U' R'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-9-5",
+          "expression": "y F2 (U R U' R') F2",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-9-6",
+          "expression": "R' U' R F' U' F",
+          "tag": "右后空槽"
+        },
+        {
+          "id": "f1-9-7",
+          "expression": "F U' F2' U' F",
+          "tag": "左前空槽"
         }
       ]
     },
     "f2l-10": {
-      "mainFormulaId": "f1-10",
+      "mainFormulaId": "f1-10-1",
       "formulas": [
         {
-          "id": "f1-10",
-          "expression": "U (L' U L) U' (L' U' L)",
-          "tag": "系统"
+          "id": "f1-10-1",
+          "expression": "U' (R U R' U)(R U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-10-2",
+          "expression": "R d' R U R' U2 F'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-10-3",
+          "expression": "U F' U F U' R U R'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-10-4",
+          "expression": "d R' U R d' R U R'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-10-5",
+          "expression": "y2 B2 (U' R' U R) B2",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-10-6",
+          "expression": "F U F' R U R'",
+          "tag": "左前空槽"
+        },
+        {
+          "id": "f1-10-7",
+          "expression": "R' U R2 U R'",
+          "tag": "右后空槽"
         }
       ]
     },
     "f2l-11": {
-      "mainFormulaId": "f1-11",
+      "mainFormulaId": "f1-11-1",
       "formulas": [
         {
-          "id": "f1-11",
-          "expression": "U' (R U2 R') U (R U R')",
-          "tag": "系统"
+          "id": "f1-11-1",
+          "expression": "U' (R U2' R') d (R' U' R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-11-2",
+          "expression": "U' (R U2' R') U (F' U' F)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-11-3",
+          "expression": "(y') R U2 R2 U' R2 U' R'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-11-4",
+          "expression": "L U2 L2 U' L",
+          "tag": "左前空槽"
         }
       ]
     },
     "f2l-12": {
-      "mainFormulaId": "f1-12",
+      "mainFormulaId": "f1-12-1",
       "formulas": [
         {
-          "id": "f1-12",
-          "expression": "U (L' U2 L) U' (L' U' L)",
-          "tag": "系统"
+          "id": "f1-12-1",
+          "expression": "R U' R' U R U' R' U2 R U' R'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-12-2",
+          "expression": "R U2 R' U2' R U2' R' U2' R U' R'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-12-3",
+          "expression": "R' U2 R2 U R2 U R",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-12-4",
+          "expression": "(U R U' R') U' (R U R' U') (R U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-12-5",
+          "expression": "R U R' U (R' F R F') (R U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-12-6",
+          "expression": "R' U2 R2 U R'",
+          "tag": "右后空槽"
         }
       ]
     },
     "f2l-13": {
-      "mainFormulaId": "f1-13",
+      "mainFormulaId": "f1-13-1",
       "formulas": [
         {
-          "id": "f1-13",
-          "expression": "y' (R' U R) U' (R' U R)",
-          "tag": "系统"
+          "id": "f1-13-1",
+          "expression": "d (R' U R U') (R' U' R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-13-2",
+          "expression": "y' U (R' U R U') (R' U' R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-13-3",
+          "expression": "(R U' R') U (R' F R F') (R U' R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-13-4",
+          "expression": "F U F' R' U' R",
+          "tag": "右后空槽"
         }
       ]
     },
     "f2l-14": {
-      "mainFormulaId": "f1-14",
+      "mainFormulaId": "f1-14-1",
       "formulas": [
         {
-          "id": "f1-14",
-          "expression": "(R U' R') U (R U' R')",
-          "tag": "系统"
+          "id": "f1-14-1",
+          "expression": "U' (R U' R' U) (R U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-14-2",
+          "expression": "F U' F' R U R'",
+          "tag": "左前空槽"
         }
       ]
     },
     "f2l-15": {
-      "mainFormulaId": "f1-15",
+      "mainFormulaId": "f1-15-1",
       "formulas": [
         {
-          "id": "f1-15",
-          "expression": "y' (R' U R) U2 y (R U R')",
-          "tag": "系统"
+          "id": "f1-15-1",
+          "expression": "R' D' R U' R' D R U (R U' R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-15-2",
+          "expression": "(F' U F) U2 (R U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-15-3",
+          "expression": "U (R' F R F') U (R U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-15-4",
+          "expression": "R U2 R' U R U R' U R U' R'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-15-5",
+          "expression": "R U R' U2 R U' R' U R U' R'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-15-6",
+          "expression": "R U' R U2' R2' U' R2 U' R2'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-15-7",
+          "expression": "U' R2 U2 R U' R' U R' U2 R2",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-15-8",
+          "expression": "U2 (R U R' U') R U2 R' U R U R'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-15-9",
+          "expression": "U' R' U2 R' U R' U' R U2 R",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-15-10",
+          "expression": "R U' R U2 R2 U' R2 U' R2",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-15-11",
+          "expression": "U' (R' U R U') (R U R')",
+          "tag": "右后空槽"
+        },
+        {
+          "id": "f1-15-12",
+          "expression": "U (R U' R') D (R U' R') D'",
+          "tag": "左前空槽"
+        },
+        {
+          "id": "f1-15-13",
+          "expression": "R F U F' U' R'",
+          "tag": "左前空槽"
         }
       ]
     },
     "f2l-16": {
-      "mainFormulaId": "f1-16",
+      "mainFormulaId": "f1-16-1",
       "formulas": [
         {
-          "id": "f1-16",
+          "id": "f1-16-1",
+          "expression": "(R U' R' U) d (R' U' R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-16-2",
           "expression": "(R U' R') U2 (F' U' F)",
-          "tag": "系统"
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-16-3",
+          "expression": "(U) R (F R U R' U' F') R'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-16-4",
+          "expression": "y' U R U2 R U' R U R' U2 R'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-16-5",
+          "expression": "F' R' U' R U F",
+          "tag": "右后空槽"
         }
       ]
     },
     "f2l-17": {
-      "mainFormulaId": "f1-17",
+      "mainFormulaId": "f1-17-1",
       "formulas": [
         {
-          "id": "f1-17",
+          "id": "f1-17-1",
           "expression": "(R U2 R') U' (R U R')",
-          "tag": "系统"
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-18": {
-      "mainFormulaId": "f1-18",
+      "mainFormulaId": "f1-18-1",
       "formulas": [
         {
-          "id": "f1-18",
+          "id": "f1-18-1",
           "expression": "y' (R' U2 R) U (R' U' R)",
-          "tag": "系统"
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-18-2",
+          "expression": "y (L' U2 L) U (L' U' L)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-18-3",
+          "expression": "(R U R' U') (R U R' U') F R' F' R",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-18-4",
+          "expression": "(R' F R F') (R U' R' U) (R U' R')",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-19": {
-      "mainFormulaId": "f1-19",
+      "mainFormulaId": "f1-19-1",
       "formulas": [
         {
-          "id": "f1-19",
+          "id": "f1-19-1",
           "expression": "U (R U2 R') U (R U' R')",
-          "tag": "系统"
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-19-2",
+          "expression": "(R U' R' U)2 R U R'",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-20": {
-      "mainFormulaId": "f1-20",
+      "mainFormulaId": "f1-20-1",
       "formulas": [
         {
-          "id": "f1-20",
+          "id": "f1-20-1",
           "expression": "y' U' (R' U2 R) U' (R' U R)",
-          "tag": "系统"
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-20-2",
+          "expression": "U' (R U' R2' F R F') (R U' R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-20-3",
+          "expression": "y' (R' U R U')2 R' U' R",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-21": {
-      "mainFormulaId": "f1-21",
+      "mainFormulaId": "f1-21-1",
       "formulas": [
         {
-          "id": "f1-21",
-          "expression": "U2 (R U R') U (R U' R')",
-          "tag": "系统"
+          "id": "f1-21-1",
+          "expression": "(R U' R') U2 (R U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-21-2",
+          "expression": "U2 (R U R' U)(R U' R')",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-22": {
-      "mainFormulaId": "f1-22",
+      "mainFormulaId": "f1-22-1",
       "formulas": [
         {
-          "id": "f1-22",
-          "expression": "y' U2 (R' U' R) U' (R' U R)",
-          "tag": "系统"
+          "id": "f1-22-1",
+          "expression": "y' (R' U R) U2 (R' U' R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-22-2",
+          "expression": "y' U2 (R' U' R U') (R' U R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-22-3",
+          "expression": "r U' r' U2 r U r'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-22-4",
+          "expression": "U (F R U R' U' F') R U R' U2'",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-23": {
-      "mainFormulaId": "f1-23",
+      "mainFormulaId": "f1-23-1",
       "formulas": [
         {
-          "id": "f1-23",
-          "expression": "(R U R' U') (R U R' U') (R U R')",
-          "tag": "系统"
+          "id": "f1-23-1",
+          "expression": "U2 R2 U2 (R' U' R U') R2",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-23-2",
+          "expression": "U (F R' F' R) U (R U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-23-3",
+          "expression": "U R U' R' U' R U' R' U R U' R'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-23-4",
+          "expression": "(R U R' U') U' (R U R' U')(R U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-23-5",
+          "expression": "R U' R' U' (R U R') U2 (R U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-23-6",
+          "expression": "R2 U R' U R U2 R' U' R'",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-24": {
-      "mainFormulaId": "f1-24",
+      "mainFormulaId": "f1-24-1",
       "formulas": [
         {
-          "id": "f1-24",
-          "expression": "y' (R' U' R U) (R' U' R U) (R' U' R)",
-          "tag": "系统"
+          "id": "f1-24-1",
+          "expression": "(R U R') d (R' U R U') (R' U R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-24-2",
+          "expression": "y' (R' U' R U) U (R' U' R U)(R' U' R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-24-3",
+          "expression": "y' U2 R2 U2 (R U R' U) R2",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-24-4",
+          "expression": "U' (R U) (R2' F R F') (R U' R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-24-5",
+          "expression": "F U (R U' R' F')(R U' R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-24-6",
+          "expression": "(R U R' U) (R U R' U') (F R' F' R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-24-7",
+          "expression": "(R U R' U) (R U2 R') F' U2 F",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-25": {
-      "mainFormulaId": "f1-25",
+      "mainFormulaId": "f1-25-1",
       "formulas": [
         {
-          "id": "f1-25",
+          "id": "f1-25-1",
           "expression": "U' (R' F R F') (R U R')",
-          "tag": "系统"
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-25-2",
+          "expression": "R' U' R' U' R' U R U R",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-25-3",
+          "expression": "U' (F' U F) U (R U' R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-25-4",
+          "expression": "R' F' R U R U' R' F",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-25-5",
+          "expression": "(U') F' R U R' U' R' F R",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-25-6",
+          "expression": "(R U' R' U') (R U' R' U) (R U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-25-7",
+          "expression": "(U) (R' U' R' U') R2 (U R U R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-25-8",
+          "expression": "(U2) (R' U' R' U' R U R U R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-25-9",
+          "expression": "R2 U' R' U R2",
+          "tag": "右后空槽"
+        },
+        {
+          "id": "f1-25-10",
+          "expression": "U D' R U' R' D",
+          "tag": "右后空槽"
         }
       ]
     },
     "f2l-26": {
-      "mainFormulaId": "f1-26",
+      "mainFormulaId": "f1-26-1",
       "formulas": [
         {
-          "id": "f1-26",
-          "expression": "U (F R' F' R) (L' U' L)",
-          "tag": "系统"
+          "id": "f1-26-1",
+          "expression": "y' R U R U R U' R' U' R'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-26-2",
+          "expression": "U (R U' R') U' (F' U F)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-26-3",
+          "expression": "U (R U' R') (F R' F' R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-26-4",
+          "expression": "y' (U') R U R U R2 U' R' U' R'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-26-5",
+          "expression": "y' (U2) R U R U R' U' R' U' R'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-26-6",
+          "expression": "r U r' U2 r U r' U2 r U' r'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-26-7",
+          "expression": "U (l F' l') (F R' F' R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-26-8",
+          "expression": "d (R B' R' B) (R' U' R)",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-27": {
-      "mainFormulaId": "f1-27",
+      "mainFormulaId": "f1-27-1",
       "formulas": [
         {
-          "id": "f1-27",
-          "expression": "(R U' R') U (R U R')",
-          "tag": "系统"
+          "id": "f1-27-1",
+          "expression": "(R U' R' U)(R U' R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-27-2",
+          "expression": "(R U' R2)(F R F')",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-28": {
-      "mainFormulaId": "f1-28",
+      "mainFormulaId": "f1-28-1",
       "formulas": [
         {
-          "id": "f1-28",
-          "expression": "y' (R' U R) U' (R' U' R)",
-          "tag": "系统"
+          "id": "f1-28-1",
+          "expression": "(R U R' U') F R' F' R",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-28-2",
+          "expression": "(R U R') d (R' U2 R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-28-3",
+          "expression": "y (L' U L U') (L' U L)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-28-4",
+          "expression": "y' (R' U R U')(R' U R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-28-5",
+          "expression": "(R U R') U (F' U2 F)",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-29": {
-      "mainFormulaId": "f1-29",
+      "mainFormulaId": "f1-29-1",
       "formulas": [
         {
-          "id": "f1-29",
-          "expression": "y' (R' U' R) U (R' U' R)",
-          "tag": "系统"
+          "id": "f1-29-1",
+          "expression": "y' (R' U' R U)(R' U' R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-29-2",
+          "expression": "U2 (R U' R') y' (R' U' R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-29-3",
+          "expression": "(R' F R F')2",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-29-4",
+          "expression": "(R' F R F') (U R U' R')",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-30": {
-      "mainFormulaId": "f1-30",
+      "mainFormulaId": "f1-30-1",
       "formulas": [
         {
-          "id": "f1-30",
-          "expression": "(R U R') U' (R U R')",
-          "tag": "系统"
+          "id": "f1-30-1",
+          "expression": "(R U R' U')(R U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-30-2",
+          "expression": "U2 (F' U F)(R U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-30-3",
+          "expression": "U' (R U2 R')U2 (R U R')",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-31": {
-      "mainFormulaId": "f1-31",
+      "mainFormulaId": "f1-31-1",
       "formulas": [
         {
-          "id": "f1-31",
-          "expression": "(R U' R') U (R U' R') U (R U' R')",
-          "tag": "系统"
+          "id": "f1-31-1",
+          "expression": "(R U' R') d (R' U R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-31-2",
+          "expression": "(R U' R' U)(F' U F)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-31-3",
+          "expression": "U' (R' F R F') (R U' R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-31-4",
+          "expression": "R U2 R' U' F R' F' R",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-32": {
-      "mainFormulaId": "f1-32",
+      "mainFormulaId": "f1-32-1",
       "formulas": [
         {
-          "id": "f1-32",
-          "expression": "y' (R' U R) U' (R' U R) U' (R' U R)",
-          "tag": "系统"
+          "id": "f1-32-1",
+          "expression": "(R U R' U')2 (R U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-32-2",
+          "expression": "(U R U' R')3",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-32-3",
+          "expression": "U' (R U R' U') (R U R' U) (R U' R')",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-33": {
-      "mainFormulaId": "f1-33",
+      "mainFormulaId": "f1-33-1",
       "formulas": [
         {
-          "id": "f1-33",
-          "expression": "U (R U' R') U' (R U R' U') (R U R')",
-          "tag": "系统"
+          "id": "f1-33-1",
+          "expression": "U' (R U' R') U2' (R U' R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-33-2",
+          "expression": "(U' R U' R') U2 (R U' R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-33-3",
+          "expression": "y U' (L' U' L) U2 (L' U' L)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-33-4",
+          "expression": "u R U' R' u'",
+          "tag": "右后空槽"
+        },
+        {
+          "id": "f1-33-5",
+          "expression": "E F' U' F u",
+          "tag": "左前空槽"
         }
       ]
     },
     "f2l-34": {
-      "mainFormulaId": "f1-34",
+      "mainFormulaId": "f1-34-1",
       "formulas": [
         {
-          "id": "f1-34",
-          "expression": "U' (R U R') U (R U' R' U) (R U' R')",
-          "tag": "系统"
+          "id": "f1-34-1",
+          "expression": "U (F' U F) U2 (F' U F)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-34-2",
+          "expression": "U' (R U2' R') U (R U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-34-3",
+          "expression": "U (R U R') U2 (R U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-34-4",
+          "expression": "d (R' U R) U2 (R' U R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-34-5",
+          "expression": "y (U L' U L) U2 (L' U L)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-34-6",
+          "expression": "U y F U2 R U2 R' F'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-34-7",
+          "expression": "E' R U R' E",
+          "tag": "右后空槽"
+        },
+        {
+          "id": "f1-34-8",
+          "expression": "u' F' U F u",
+          "tag": "左前空槽"
         }
       ]
     },
     "f2l-35": {
-      "mainFormulaId": "f1-35",
+      "mainFormulaId": "f1-35-1",
       "formulas": [
         {
-          "id": "f1-35",
-          "expression": "U' (R U R') U2 (R U' R')",
-          "tag": "系统"
+          "id": "f1-35-1",
+          "expression": "U' R U R' U (F' U' F)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-35-2",
+          "expression": "(U' R U R') d (R' U' R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-35-3",
+          "expression": "U2 (R U' R') U' (F' U' F)",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-36": {
-      "mainFormulaId": "f1-36",
+      "mainFormulaId": "f1-36-1",
       "formulas": [
         {
-          "id": "f1-36",
-          "expression": "U (R U' R') U2 (R U R')",
-          "tag": "系统"
+          "id": "f1-36-1",
+          "expression": "U F' U' F U' (R U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-36-2",
+          "expression": "U2 (R' F R F') U2 (R U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-36-3",
+          "expression": "y' U (R' U' R U') y (R U R')",
+          "tag": "Wiki"
         }
       ]
     },
@@ -374,42 +1023,122 @@
       ]
     },
     "f2l-38": {
-      "mainFormulaId": "f1-38",
+      "mainFormulaId": "f1-38-1",
       "formulas": [
         {
-          "id": "f1-38",
-          "expression": "(R U R' U') (R U' R') U2 (R U' R')",
-          "tag": "系统"
+          "id": "f1-38-1",
+          "expression": "(R' F R F') (R U' R' U) (R U' R' U2) (R U' R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-38-2",
+          "expression": "(R U' R') d (R' U2 R) U2' (R' U R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-38-3",
+          "expression": "(R U R') U2 (R U2 R') d (R' U' R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-38-4",
+          "expression": "(R2 U2) (F R2 F') (U2 R' U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-38-5",
+          "expression": "(R U R' U')(R U2 R' d)(R' U' R U' R' U R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-38-6",
+          "expression": "R U' R2 U2 R U' F' U F",
+          "tag": "右后空槽"
+        },
+        {
+          "id": "f1-38-7",
+          "expression": "R U' R2 U2 R F R' F' R",
+          "tag": "右后空槽"
+        },
+        {
+          "id": "f1-38-8",
+          "expression": "R U' R2 U2 R U2 F' U2 F",
+          "tag": "右后空槽"
         }
       ]
     },
     "f2l-39": {
-      "mainFormulaId": "f1-39",
+      "mainFormulaId": "f1-39-1",
       "formulas": [
         {
-          "id": "f1-39",
+          "id": "f1-39-1",
+          "expression": "(R U' R') U' (R U R') U2 (R U' R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-39-2",
+          "expression": "y' (R' U' R) U2 (R' U R U') (R' U' R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-39-3",
           "expression": "(R U R' U') (R U2 R') U' (R U R')",
-          "tag": "系统"
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-40": {
-      "mainFormulaId": "f1-40",
+      "mainFormulaId": "f1-40-1",
       "formulas": [
         {
-          "id": "f1-40",
-          "expression": "(R U R' U') (R U R')",
-          "tag": "系统"
+          "id": "f1-40-1",
+          "expression": "(R U' R' U)(R U2' R') U (R U' R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-40-2",
+          "expression": "(R U R') U2 (R U' R' U)(R U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-40-3",
+          "expression": "(R U2) (R U R' U) (R U2 R2')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-40-4",
+          "expression": "y' R2 U2 R U R' U R U2 R",
+          "tag": "Wiki"
         }
       ]
     },
     "f2l-41": {
-      "mainFormulaId": "f1-41",
+      "mainFormulaId": "f1-41-1",
       "formulas": [
         {
-          "id": "f1-41",
-          "expression": "(R U R') U' (R U' R') U (R U R')",
-          "tag": "系统"
+          "id": "f1-41-1",
+          "expression": "(r U' r') U2 (r U r') (R U R')",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-41-2",
+          "expression": "(R U' R') d (R' U' R U') (R' U' R)",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-41-3",
+          "expression": "R U' R' U' R U' R' d R' U' R",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-41-4",
+          "expression": "R (F U R U' R' F') U' R'",
+          "tag": "Wiki"
+        },
+        {
+          "id": "f1-41-5",
+          "expression": "R U' R2 U' R y' R' U' R y",
+          "tag": "右后空槽"
         }
       ]
     },
